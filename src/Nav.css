@@ -1,0 +1,34 @@
+.nav{
+    position: fixed; /*this will make the logo stick to top even dusrig scrolling*/
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    height: 28px;
+  
+    z-index: 1; /*so that it will always remain on top*/
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    
+    
+}
+.nav_black{
+    background-color: #111;
+}
+
+.nav_logo{
+    margin-top: 0;
+    object-fit: contain;
+    position: fixed;
+    left: 15px;
+    width: 100px;
+    
+}
+.nav_avatar{
+    position: fixed;
+    right: 15px;
+    object-fit: contain;
+    width: 35px;
+    margin-top: -10px;
+}

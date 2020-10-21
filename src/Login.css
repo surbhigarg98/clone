@@ -1,0 +1,18 @@
+.login_container>img{
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    object-fit: contain;
+    margin-left: 75px;
+   
+}
+
+.login_text>Button{
+    margin-top: 20px;
+    text-transform: inherit !important;
+    background-color: #b00 !important;
+    color: white !important;
+    
+    margin-left: 50px;
+
+}
