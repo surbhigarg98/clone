@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "netflix-clone-8ac1a"
+    "default": "netflix-clone-8ac1a",
+    "netflix-clone-8ac1a": "netflix-clone-8ac1a"
   }
 }
