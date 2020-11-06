@@ -1,10 +1,10 @@
 import { Avatar } from '@material-ui/core';
 import React, { useEffect, useState } from 'react'
 import './Nav.css'
-import { useStateValue } from './StateProvider'
+
 
 function Nav() {
-    const [{user},dispatch] = useStateValue();
+    
     const [show,handShow] = useState(false)
 
     useEffect(()=>{
@@ -24,9 +24,9 @@ function Nav() {
             <img className="nav_logo"
             src="https://seeklogo.com/images/N/netflix-logo-0BC9BFB255-seeklogo.com.png"
             alt="netflix logo" />
-        <div className="nav_avatar">
-            <Avatar 
-            src={user?.photoURL}
+        <div>
+            <img  className="nav_avatar" 
+           src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png"
            />
             </div>
         </div>

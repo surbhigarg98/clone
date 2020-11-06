@@ -6,16 +6,13 @@ import requests from './requests'
 import Banner from './Banner';
 import Nav from './Nav';
 
-import Login from './Login';
-import { useStateValue } from './StateProvider';
+
 
 function App() {
-  const [{user},dispatch] = useStateValue();
+  
   return (
     <div className="App">
-      {!user ? (
-        <Login/>
-      ) : (
+     
         <div className="App_body">
         <Nav/>
       <Banner/>
@@ -29,12 +26,12 @@ function App() {
        <Row title ="Roamantic Movies" fetchUrl ={requests.fetchRomanticMovies}/>
        <Row title ="Documentaries" fetchUrl ={requests.fetchDocumentaries}/>
         </div>
-      )
-      }
+      
+      
 
     
     </div>
   );
-}
 
+  }
 export default App;
